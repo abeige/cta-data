@@ -1,3 +1,4 @@
 api_key_*.txt
 *.csv
 *.DS_Store
+/.ipynb_checkpoints
