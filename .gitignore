@@ -1,4 +1,5 @@
-api_key_*.txt
-*.csv
+.env
+data/*
+
 *.DS_Store
 /.ipynb_checkpoints

@@ -1,11 +1,9 @@
 # Adam Beigel
-# 8 December 2023
+# 24 February 2023
 
-with open('api_key_bus.txt') as f:
-    bus_key = f.read().strip()
+import os
+from dotenv import load_dotenv
 
-with open('api_key_train.txt') as f:
-    train_key = f.read().strip()
-
-print(f"bus key: {bus_key}")
-print(f"train key: {train_key}")
+load_dotenv()
+bus_api_key = os.getenv('BUS_API_KEY')
+train_api_key = os.getenv('TRAIN_API_KEY')
